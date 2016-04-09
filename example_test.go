@@ -1,7 +1,7 @@
 package config_test
 import (
 	"fmt"
-	"github.com/orivil/config"
+	"gopkg.in/orivil/config.v0"
 )
 
 var configI18n = &struct {
