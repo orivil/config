@@ -1,3 +1,8 @@
+// Copyright 2016 orivil Authors. All rights reserved.
+// Use of this source code is governed by a MIT-style
+// license that can be found in the LICENSE file.
+
+// Package config for read the data form 'yaml' or 'json' file and copy the data to a struct.
 package config
 
 import (
