@@ -1,4 +1,4 @@
-# Orivil config tool
+# Orivil config component
 
 ## Install
 
@@ -16,6 +16,12 @@ go test example_test.go
 
 ## Usage
 
-```
 see example_test.go
-```
+
+## Contributors
+
+https://github.com/orivil/config/graphs/contributors
+
+## License
+
+Released under the [MIT License](https://github.com/orivil/config/blob/master/LICENSE).
