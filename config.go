@@ -11,7 +11,6 @@ import (
 	"path/filepath"
 	"os"
 	"io/ioutil"
-	"log"
 )
 
 func NewConfig(readDir string) *Config {
@@ -56,15 +55,7 @@ func (this *Config) ReadStruct(name string, struc interface{}) error {
 		filename := filepath.Join(this.readDir, name)
 		data, err := ioutil.ReadFile(filename)
 		if os.IsNotExist(err) {
-			data, err = yaml.Marshal(struc)
-			if err != nil {
-				return err
-			}
-			err = ioutil.WriteFile(filename, data, 0666)
-			if err != nil {
-				return err
-			}
-			log.Printf("generating config file:%s\n", filename)
+			return nil
 		} else if err != nil {
 			return err
 		} else {
